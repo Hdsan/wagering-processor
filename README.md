@@ -9,6 +9,8 @@ Pré-requisitos:
 - Bun
 - Docker
 
+O arquivo .env.example tem as informações do ambiente, só renomeie pra .env que vai estar funcional
+
 Instale as dependências e suba a infraestrutura:
 
 ```bash
@@ -25,13 +27,6 @@ bun run start:dev
 ```
 
 A API fica disponível em `http://localhost:3000`.
-
-Principais URLs locais:
-
-- Health: `http://localhost:3000/health/live`
-- Readiness: `http://localhost:3000/health/ready`
-- PostgreSQL: `localhost:5433`
-- MiniStack SQS: `localhost:4566`
 
 Para parar e remover os containers e volumes da infraestrutura:
 
